@@ -1,0 +1,90 @@
+/*
+* 
+* @author Douglas Nickson
+* @version 1.0
+*/
+
+/* ========================= layout ======================== */
+html, body {
+	height: 100%;
+	overflow: auto;
+}
+
+body {
+	background: linear-gradient(50deg,#6c757d,#dee2e6);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+}
+
+/* -- NAVBAR --  */
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    color: #dee2e6;
+    }
+
+.img-perfil {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.navbar-nav>li>a, footer .nav a {
+	color: #dee2e6;
+}
+
+.navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #e9ecef;
+	background: none;
+}
+
+.nav-icons {
+    margin: 8px 0px 0px 0px;
+    width: 100px;
+    height: 30px;
+}
+
+.fa-md {
+    padding: 0 10px 0 10px;
+}
+
+.divisor{
+	width: 1px;
+	height: 20px;
+	background: #e9ecef;
+	margin: 3px 0px 0 15px;
+}
+
+/* -- Menu Lateral -- */
+.nav-side-menu {
+    color: #dee2e6;
+    overflow: auto;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.nav-side-menu ul {
+    list-style: none;
+}
+
+.nav-side-menu li {
+    padding: 5px 0px 5px 0px;;
+}
+
+.nav-side-menu a {
+    color: #dee2e6;
+    width: 200px;
+    padding: 7px 20px 7px 20px;;
+}
+
+.nav-side-menu a:hover {
+    background: #4f5b69;
+    border-radius: 3px;
+    padding: 7px 20px 7px 20px;;
+}
+
+/* -- Conteudo -- */
+
+/* -- Rodape -- */
