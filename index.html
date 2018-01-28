@@ -41,7 +41,7 @@
             <li class="dropdown"><a href="#" aria-expanded="false"><span class="fa-lg fa fa-envelope"></span></a></li>
             <li class="dropdown"><a href="#" aria-expanded="false"><span class="fa-lg fa fa-bell"></span></a></li>
             <li class="dropdown">
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#barra">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#nav-side-menu">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
             </li>
@@ -53,21 +53,34 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-2">
-            <div class="nav-side-menu bg-dark">
+        <!-- Inicio Sidebar -->
+        <div class="col-sm-2" id="nav-side-menu"> 
+            <div class="nav-side-menu bg-dark" >
                 <div class="img-perfil"></div>
                 <span class="nav-link nome-perfil">Douglas Nickson</span>
-                <ul class="nav menu">
-                    <li><a href="#"><i class="fa fa-dashboard" aria-hidden="true"></i> Dashboard</a></li>
-                    <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i> Modulo</a></li>
-                    <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Assunto</a></li>
-                    <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Exercício</a></li>
-                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Usuario</a></li>
-                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a></li>
-
+                <ul class="nav navbar-nav">
+                    <li class="parent">
+                        <a href="#sub-item-1" class="" aria-expanded="true" data-toggle="collapse">
+                            <i class="fa-lg fa fa-dashboard" aria-hidden="true"></i> 
+                            Dashboard
+                        </a>
+                        <ul class="children collapse" id="sub-item-1" aria-expanded="false">
+                            <li><a class="" href="#">
+                                    <span class="fa fa-arrow-right">&nbsp;</span> Sub Item 1
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-lg fa fa-book" aria-hidden="true"></i> Modulo</a></li>
+                    <li><a href="#"><i class="fa-lg fa fa-newspaper-o" aria-hidden="true"></i> Assunto</a></li>
+                    <li><a href="#"><i class="fa-lg fa fa-pencil-square-o" aria-hidden="true"></i> Exercício</a></li>
+                    <li><a href="#"><i class="fa-lg fa fa-user" aria-hidden="true"></i> Usuario</a></li>
+                    <li><a href="#"><i class="fa-lg fa fa-wrench" aria-hidden="true"></i> Configurações</a></li>
+                    <li><a href="#"><i class="fa-lg fa fa-sign-out" aria-hidden="true"></i> Sair</a></li>
                 </ul>
             </div>
-        </div>
+        </div><!-- Fim Sidebar -->
+
         <div class="col-sm-8">.col-sm-8</div>
     </div>
 </div>
