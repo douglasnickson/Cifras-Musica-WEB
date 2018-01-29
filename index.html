@@ -48,16 +48,19 @@
 
 <div class="container-fluid">
     <div class="row">
+
         <!-- Inicio Sidebar -->
-        <div class="col-sm-2" id="nav-side-menu"> 
+        <div class="col-sm-2 sidebar" id="nav-side-menu"> 
             <div class="nav-side-menu bg-dark" >
-                <div class="img-perfil"></div>
-                <span class="nav-link nome-perfil">Douglas Nickson</span>
+
+                <div class="sidebar-profile-pic"></div>
+                <span class="nav-link sidebar-profile-name">Douglas Nickson</span>
                 <div class="divider"></div>
+
                 <ul class="nav" style="display:block;">
                     <li><a href="#"><i class="fa-lg fa fa-dashboard" aria-hidden="true"></i> Dashboard</a></li>
                     <li class="parent"><a data-toggle="collapse" href="#modulo-item-1">
-                        <em class="fa-lg fa fa-book">&nbsp;</em> Modulo <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
+                        <i class="fa-lg fa fa-book">&nbsp;</i> Modulo <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
                         <ul class="children collapse" id="modulo-item-1">
                             <li><a class="" href="#">
                                 <span class="fa fa-arrow-right">&nbsp;</span> Cadastrar Modulo
@@ -68,7 +71,7 @@
                         </ul>       
                     </li>
                     <li class="parent"><a data-toggle="collapse" href="#assunto-item-1">
-                        <em class="fa-lg fa fa-newspaper-o">&nbsp;</em> Assunto <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
+                        <i class="fa-lg fa fa-newspaper-o">&nbsp;</i> Assunto <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
                         <ul class="children collapse" id="assunto-item-1">
                             <li><a class="" href="#">
                                 <span class="fa fa-arrow-right">&nbsp;</span> Cadastrar Assunto
@@ -79,7 +82,7 @@
                         </ul>       
                     </li>
                     <li class="parent "><a data-toggle="collapse" href="#exercicio-item-1">
-                        <em class="fa-lg fa fa-pencil-square-o">&nbsp;</em> Exercicio <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
+                        <i class="fa-lg fa fa-pencil-square-o">&nbsp;</i> Exercicio <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
                         <ul class="children collapse" id="exercicio-item-1">
                             <li><a class="" href="#">
                                 <span class="fa fa-arrow-right">&nbsp;</span> Cadastrar Exercicio
@@ -98,9 +101,18 @@
             </div>
         </div><!-- Fim Sidebar -->
 
-        <div class="col-sm-8">
-            <h1>Dashboard</h1>
-            <div class="divider"></div>
+        <div class="col-sm-10">
+
+            <section class="dashboard">
+                
+                <div class="dashboard-path">
+                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <span> / </span>
+                    <a href="#">Dashboard</a>
+                </div>
+
+            </section>
+
         </div>
     </div>
 </div>
@@ -110,6 +122,7 @@
 <script src="js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
+
 
 </body>
 </html>
