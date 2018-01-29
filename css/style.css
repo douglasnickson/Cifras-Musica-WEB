@@ -57,12 +57,11 @@ body {
     font-size: 14px;
     margin-bottom: -9999px;
     padding-bottom: 9999px;
+
 }
 
 .nav-side-menu ul {
     list-style: none;
-    display: block;
-    border-top: 1px solid;
     margin-top: 10px;
 }
 
@@ -70,6 +69,15 @@ body {
     padding-top: 3px;
 
 }
+
+.children>li>a:hover {
+    background: none;
+    color: darkgrey;
+}
+
+.divider {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 10px 0; }
 
 .nav-side-menu a {
     display: block;

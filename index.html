@@ -6,12 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cifras e Musica</title>
 
-    <!-- Jquery e Popper JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-
     <!-- Bootstrap -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
     <!-- CSS -->
@@ -58,31 +53,63 @@
             <div class="nav-side-menu bg-dark" >
                 <div class="img-perfil"></div>
                 <span class="nav-link nome-perfil">Douglas Nickson</span>
-                <ul class="nav navbar-nav">
-                    <li class="parent">
-                        <a href="#sub-item-1" class="" aria-expanded="true" data-toggle="collapse">
-                            <i class="fa-lg fa fa-dashboard" aria-hidden="true"></i> 
-                            Dashboard
-                        </a>
-                        <ul class="children collapse" id="sub-item-1" aria-expanded="false">
+                <div class="divider"></div>
+                <ul class="nav" style="display:block;">
+                    <li><a href="#"><i class="fa-lg fa fa-dashboard" aria-hidden="true"></i> Dashboard</a></li>
+                    <li class="parent"><a data-toggle="collapse" href="#modulo-item-1">
+                        <em class="fa-lg fa fa-book">&nbsp;</em> Modulo <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
+                        <ul class="children collapse" id="modulo-item-1">
                             <li><a class="" href="#">
-                                    <span class="fa fa-arrow-right">&nbsp;</span> Sub Item 1
-                                </a>
-                            </li>
-                        </ul>
+                                <span class="fa fa-arrow-right">&nbsp;</span> Cadastrar Modulo
+                            </a></li>
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Gerenciar Modulo
+                            </a></li>
+                        </ul>       
                     </li>
-                    <li><a href="#"><i class="fa-lg fa fa-book" aria-hidden="true"></i> Modulo</a></li>
-                    <li><a href="#"><i class="fa-lg fa fa-newspaper-o" aria-hidden="true"></i> Assunto</a></li>
-                    <li><a href="#"><i class="fa-lg fa fa-pencil-square-o" aria-hidden="true"></i> Exercício</a></li>
+                    <li class="parent"><a data-toggle="collapse" href="#assunto-item-1">
+                        <em class="fa-lg fa fa-newspaper-o">&nbsp;</em> Assunto <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
+                        <ul class="children collapse" id="assunto-item-1">
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Cadastrar Assunto
+                            </a></li>
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Gerenciar Assunto
+                            </a></li>
+                        </ul>       
+                    </li>
+                    <li class="parent "><a data-toggle="collapse" href="#exercicio-item-1">
+                        <em class="fa-lg fa fa-pencil-square-o">&nbsp;</em> Exercicio <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
+                        <ul class="children collapse" id="exercicio-item-1">
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Cadastrar Exercicio
+                            </a></li>
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Gerenciar Exercicio
+                            </a></li>
+                        </ul>       
+                    </li>
                     <li><a href="#"><i class="fa-lg fa fa-user" aria-hidden="true"></i> Usuario</a></li>
                     <li><a href="#"><i class="fa-lg fa fa-wrench" aria-hidden="true"></i> Configurações</a></li>
                     <li><a href="#"><i class="fa-lg fa fa-sign-out" aria-hidden="true"></i> Sair</a></li>
+
                 </ul>
+
             </div>
         </div><!-- Fim Sidebar -->
 
-        <div class="col-sm-8">.col-sm-8</div>
+        <div class="col-sm-8">
+            <h1>Dashboard</h1>
+            <div class="divider"></div>
+        </div>
     </div>
 </div>
+
+<!-- JS Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>
