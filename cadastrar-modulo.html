@@ -103,12 +103,50 @@
 
         <div class="col-sm-10">
 
-            <section class="dashboard">
+            <section class="module-content">
                 
                 <div class="page-path">
                     <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                     <span> / </span>
-                    <a href="#">Dashboard</a>
+                    <a href="#">Cadastrar Modulo</a>
+                </div>
+
+                <div class="content">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="module-form-content bg-dark">
+                                <h1>Cadastrar Modulo</h1>
+                                    <form action="/action_page.php">
+
+                                        <div class="form-group">
+                                            <label for="email">Titulo do Modulo:</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>                                 
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlFile1">Imagem do Modulo:</label>
+                                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="comment">Conteúdo:</label>
+                                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                                        </div>
+                                      
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Modulo Premium</label>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" checked="true"> Modulo Ativo</label>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-default">Cadastrar Modulo</button>
+                                    </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">2</div>
+                    </div>
                 </div>
 
             </section>
