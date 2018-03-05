@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cifras & Música - Teoria Músical</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="#" class="logo"><span class="logo-lg">Cifras & Música</span></a>
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="collapse" data-target="#main-sidebar" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav-inline">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <aside class="main-sidebar bg-dark" id="main-sidebar">
+            <section class="sidebar">
+
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="images/avatar5.png" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>Douglas Nickson</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+
+                <ul class="nav" style="display:block;">
+                    <li><a href="index.html"><i class="fa-lg fa fa-dashboard" aria-hidden="true"></i> Dashboard</a></li>
+                    <li class="parent"><a data-toggle="collapse" href="#modulo-item-1">
+                        <i class="fa-lg fa fa-book">&nbsp;</i> Modulo <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
+                        <ul class="children collapse" id="modulo-item-1">
+                            <li><a class="" href="cadastrar-modulo.html">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Cadastrar Modulo
+                            </a></li>
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Gerenciar Modulo
+                            </a></li>
+                        </ul>       
+                    </li>
+                    <li class="parent"><a data-toggle="collapse" href="#assunto-item-1">
+                        <i class="fa-lg fa fa-newspaper-o">&nbsp;</i> Assunto <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
+                        <ul class="children collapse" id="assunto-item-1">
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Cadastrar Assunto
+                            </a></li>
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Gerenciar Assunto
+                            </a></li>
+                        </ul>       
+                    </li>
+                    <li class="parent "><a data-toggle="collapse" href="#exercicio-item-1">
+                        <i class="fa-lg fa fa-pencil-square-o">&nbsp;</i> Exercicio <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span></a>
+                        <ul class="children collapse" id="exercicio-item-1">
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Cadastrar Exercicio
+                            </a></li>
+                            <li><a class="" href="#">
+                                <span class="fa fa-arrow-right">&nbsp;</span> Gerenciar Exercicio
+                            </a></li>
+                        </ul>       
+                    </li>
+                    <li><a href="#"><i class="fa-lg fa fa-user" aria-hidden="true"></i> Usuario</a></li>
+                    <li><a href="#"><i class="fa-lg fa fa-wrench" aria-hidden="true"></i> Configurações</a></li>
+                    <li><a href="#"><i class="fa-lg fa fa-sign-out" aria-hidden="true"></i> Sair</a></li>
+    
+                </ul>
+            </section>
+        </aside>
+        <div class="content-wrapper">
+            <section class="content-header">
+                <h1>Modulo
+                  <small>Cadastro</small>
+                </h1>
+                <ol class="breadcrumb">
+                  <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                  <li class="active">Cadastrar-Modulo</li>
+                </ol>
+              </section>
+              <section class="content">
+                  <div class="row">
+                      <div class="col-sm-8">
+                            <div class="form-content bg-dark">
+                                <form action="/action_page.php">
+
+                                    <div class="form-group">
+                                        <label for="email">Titulo do Modulo:</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>                                 
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1">Imagem do Modulo:</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="comment">Conteúdo:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                    
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"> Modulo Premium</label>
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" checked="true"> Modulo Ativo</label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-default">Cadastrar Modulo</button>
+                                </form>
+                            </div>
+                      </div>
+                      <div class="col-sm-4">
+
+                        <div class="form-content bg-dark">
+                            <h4>Modulos</h4>
+                            <table class="table table-sm table-hover">
+                                <tr>
+                                    <td>Modulo 1</td>
+                                    <td style="text-align:right;">
+                                        <a class="btn"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="btn"><i class="fa fa-trash-o"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Modulo 2</td>
+                                    <td style="text-align:right;">
+                                        <a class="btn"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="btn"><i class="fa fa-trash-o"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Modulo 3</td>
+                                    <td style="text-align:right;">
+                                        <a class="btn"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="btn"><i class="fa fa-trash-o"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Modulo 4</td>
+                                    <td style="text-align:right;">
+                                        <a class="btn"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="btn"><i class="fa fa-trash-o"></i></a>
+                                    </td>
+                                </tr>
+                              </table>
+                        </div>
+
+                      </div>
+                  </div>
+              </section>
+        </div>
+    </div>
+<!-- JS Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
