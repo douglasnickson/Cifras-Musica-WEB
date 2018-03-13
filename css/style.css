@@ -30,7 +30,6 @@ a:hover {
 }
 
 .wrapper {
-    height: 100%;
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
@@ -268,7 +267,7 @@ a:hover {
     padding-top: 50px;
     min-height: 100%;
     width: 230px;
-    z-index: 810;
+    z-index: 910;
     -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;
     -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
     -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;
@@ -708,4 +707,8 @@ a:hover {
  }
  .social-auth-links {
    margin: 10px 0;
+ }
+
+ .fr-toolbar {
+    border: none;
  }
